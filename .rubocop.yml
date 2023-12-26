@@ -1,0 +1,242 @@
+AllCops:
+  NewCops: enable
+
+Metrics/BlockLength:
+  Exclude:
+    - 'spec/**/*.rb'
+#   Exclude:
+#     - 'test/**/*'
+#     - 'db/**/*'
+# Layout/LineLength:
+#   Exclude:
+#     - 'app/jobs/send_confirmed_appointment_email_reminders_job.rb'
+#     - 'app/jobs/send_unconfirmed_appointment_email_reminders_job.rb'
+#     - 'app/models/assignment.rb'
+#     - 'lib/events/events_notifier_session.rb'
+#     - 'lib/tutoring_appointment_lib.rb'
+#     - 'app/models/placement/match.rb'
+#     - 'app/models/api_desired_placement.rb'
+#     - 'app/models/tutoring_appointment.rb'
+#     - 'config/initializers/karafka.rb'
+#     - 'app/models/desired_placement/update.rb'
+#     - 'app/api/v5/desired_placements.rb'
+#     - 'app/models/teacher_requested_placement/update.rb'
+#     - 'app/models/todo.rb'
+# Metrics/AbcSize:
+#   Enabled: false
+#   # One of our big offenders ABC, is not a metric that we as a team are preocupied in reinforcing
+# Metrics/BlockLength:
+#   Exclude:
+#     - 'app/api/v5/organizations.rb'
+#     - 'app/api/v5/clients.rb'
+#     - 'app/models/canned_response.rb'
+#     - 'app/controllers/referrals_controller.rb'
+#     - 'app/models/concerns/payor_concern.rb'
+#     - 'app/models/concerns/todo_concern.rb'
+#     - 'app/api/vt/desired_placements.rb'
+#     - 'app/api/vt/tutoring_appointments.rb'
+#     - 'app/api/v3/tutor_applicants.rb'
+#     - 'app/api/v5/zendesk.rb'
+#     - 'config/initializers/karafka.rb'
+#     - 'lib/tasks/tutor.rake'
+#     - 'app/models/desired_placement/update.rb'
+#     - 'app/api/v5/desired_placements.rb'
+#     - 'app/api/v5/teacher_requested_placements.rb'
+#     - 'app/models/todo.rb'
+#     - 'config/environments/staging.rb'
+#     - 'config/environments/production.rb'
+# Metrics/BlockNesting:
+#   Exclude:
+#     - 'app/controllers/referrals_controller.rb'
+# Metrics/CyclomaticComplexity:
+#   Exclude:
+#     - 'app/controllers/desired_placements_controller.rb'
+#     - 'app/controllers/payments_controller.rb'
+#     - 'app/controllers/referrals_controller.rb'
+#     - 'app/decorators/logable_event_decorator.rb'
+#     - 'app/helpers/desired_placement_helper.rb'
+#     - 'app/jobs/send_unconfirmed_appointment_email_reminders_job.rb'
+#     - 'app/mailers/user_mailer.rb'
+#     - 'app/models/concerns/appointment_confirmation_concern.rb'
+#     - 'app/models/desired_placement/create.rb'
+#     - 'app/models/desired_placement/update.rb'
+#     - 'app/models/mobile_push_user_notification.rb'
+#     - 'app/models/placement/match.rb'
+#     - 'app/models/placement/mobile/desired_placement_campaign_concern.rb'
+#     - 'app/models/todo.rb'
+#     - 'app/models/tutor_desired_placement.rb'
+#     - 'app/models/tutor_ledger.rb'
+#     - 'app/models/tutor_rate_type_jurisdiction.rb'
+#     - 'app/models/tutor.rb'
+#     - 'app/models/tutoring_appointment.rb'
+#     - 'app/models/user.rb'
+#     - 'app/services/opportunities/time_options_service.rb'
+#     - 'app/workers/placement/prepare_notifications_worker.rb'
+#     - 'lib/hirevue.rb'
+#     - 'lib/placement/legal.rb'
+#     - 'lib/services/sterling/*.rb'
+#     - 'lib/tutor_lib.rb'
+#     - 'lib/tutoring_appointment_lib.rb'
+#     - 'lib/vt_sales_mediator/request.rb'
+#     - 'lib/vtop/session_manager.rb'
+#     - 'lib/zendesk_router.rb'
+# Metrics/MethodLength:
+#   Max: 20
+#   Exclude:
+#     - 'app/controllers/desired_placements_controller.rb'
+#     - 'app/controllers/payments_controller.rb'
+#     - 'app/controllers/referrals_controller.rb'
+#     - 'app/helpers/desired_placement_helper.rb'
+#     - 'app/jobs/send_confirmed_appointment_email_reminders_job.rb'
+#     - 'app/jobs/send_tutor_daily_digest_job.rb'
+#     - 'app/jobs/send_unconfirmed_appointment_email_reminders_job.rb'
+#     - 'app/jobs/tutor_status_active_job.rb'
+#     - 'app/models/api_desired_placement.rb'
+#     - 'app/models/bulk_placement.rb'
+#     - 'app/models/canned_response.rb'
+#     - 'app/models/concerns/appointment_confirmation_concern.rb'
+#     - 'app/models/desired_placement/create.rb'
+#     - 'app/models/desired_placement/update.rb'
+#     - 'app/models/mobile_push_user_notification.rb'
+#     - 'app/models/placement/match.rb'
+#     - 'app/models/todo.rb'
+#     - 'app/models/tutor_desired_placement.rb'
+#     - 'app/models/tutor_ledger.rb'
+#     - 'app/models/tutor_tax_forms/w8ben.rb'
+#     - 'app/models/tutoring_appointment.rb'
+#     - 'app/services/opportunities/time_options_service.rb'
+#     - 'app/services/placement/tutor_desired_placement_activation_service.rb'
+#     - 'app/services/tutors/create_tutor_service.rb'
+#     - 'app/workers/appointment/impromptu_tutoring_session_notification_worker.rb'
+#     - 'app/workers/placement/prepare_notifications_worker.rb'
+#     - 'lib/financial/credit_transfer.rb'
+#     - 'lib/services/tutor_rate_type_service.rb'
+#     - 'lib/tutoring_appointment_lib.rb'
+#     - 'lib/vtop/session_manager.rb'
+# Metrics/ModuleLength:
+#   Max: 250
+#   Exclude:
+#     - 'lib/financial/credit_transfer.rb'
+#     - 'lib/tutoring_appointment_lib.rb'
+#     - 'lib/varsity_tutors/contacts.rb'
+#     - 'app/helpers/desired_placement_helper.rb'
+#     - 'app/helpers/activity_map_helper.rb'
+#     - 'app/models/concerns/tutor_status_concern.rb'
+# Style/SingleArgumentDig:
+#   Exclude:
+#     - 'app/models/desired_placement/update.rb'
+# Style/SoleNestedConditional:
+#   Exclude:
+#     - 'app/models/desired_placement/update.rb'
+# Style/IfUnlessModifier:
+#   Exclude:
+#     - 'app/models/desired_placement/update.rb'
+#     - 'app/models/todo.rb'
+# Metrics/ParameterLists:
+#   Exclude:
+#     - 'lib/events/events_notifier_session.rb'
+#     - 'app/models/placement/match.rb'
+#     - 'app/models/desired_placement/update.rb'
+#     - 'app/models/desired_placement/create.rb'
+#     - 'app/models/todo.rb'
+# Metrics/PerceivedComplexity:
+#   Exclude:
+#     - 'app/controllers/desired_placements_controller.rb'
+#     - 'app/controllers/payments_controller.rb'
+#     - 'app/controllers/referrals_controller.rb'
+#     - 'app/decorators/logable_event_decorator.rb'
+#     - 'app/helpers/desired_placement_helper.rb'
+#     - 'app/jobs/send_unconfirmed_appointment_email_reminders_job.rb'
+#     - 'app/models/assignment.rb'
+#     - 'app/models/concerns/appointment_confirmation_concern.rb'
+#     - 'app/models/desired_placement/create.rb'
+#     - 'app/models/desired_placement/update.rb'
+#     - 'app/models/mobile_push_user_notification.rb'
+#     - 'app/models/placement/match.rb'
+#     - 'app/models/placement/mobile/desired_placement_campaign_concern.rb'
+#     - 'app/models/todo.rb'
+#     - 'app/models/tutor_desired_placement.rb'
+#     - 'app/models/tutor_ledger.rb'
+#     - 'app/models/tutoring_appointment.rb'
+#     - 'app/models/user.rb'
+#     - 'app/services/opportunities/time_options_service.rb'
+#     - 'app/workers/placement/prepare_notifications_worker.rb'
+#     - 'lib/hirevue.rb'
+#     - 'lib/placement/legal.rb'
+#     - 'lib/tutor_lib.rb'
+#     - 'lib/tutoring_appointment_lib.rb'
+#     - 'lib/vt_sales_mediator/request.rb'
+#     - 'lib/vtop/session_manager.rb'
+# Metrics/ClassLength:
+#   Max: 250
+#   Exclude:
+#     - 'app/api/**/*' # Grape classes typically consist of over 100 lines, which is the default length.
+#     - 'app/controllers/desired_placements_controller.rb'
+#     - 'app/models/assignment.rb'
+#     - 'app/models/canned_response.rb'
+#     - 'app/models/client.rb'
+#     - 'app/models/contact.rb'
+#     - 'app/models/subject.rb'
+#     - 'app/models/tutor.rb'
+#     - 'app/models/tutor_desired_placement.rb'
+#     - 'app/models/desired_placement/create.rb'
+#     - 'app/models/teacher_requested_placement/update.rb'
+#     - 'app/models/tutoring_appointment.rb'
+#     - 'app/models/tutoring_session.rb'
+#     - 'app/models/user.rb'
+#     - 'app/models/todo.rb'
+#     - 'app/models/credit.rb'
+#     - 'app/services/assignment/assignment_activation_service.rb'
+#     - 'lib/events/events_notifier_session.rb'
+#     - 'app/models/bulk_placement.rb'
+#     - 'app/models/desired_placement.rb'
+#     - 'app/models/desired_placement_campaign.rb'
+#     - 'app/models/desired_placement/update.rb'
+#     - 'app/models/problem.rb'
+#     - 'app/models/todo.rb'
+#     - 'app/controllers/payments_controller.rb'
+#     - 'app/models/client.rb'
+#     - 'app/controllers/canned_responses_controller.rb'
+#     - 'app/controllers/jobs_controller.rb'
+# Style/OptionalBooleanParameter:
+#   Exclude:
+#     - 'lib/events/events_notifier_session.rb'
+#     - 'app/helpers/desired_placement_helper.rb'
+#     - 'app/models/todo.rb'
+# Style/ClassAndModuleChildren:
+#   Exclude:
+#     - 'app/services/organizations/calculate_sessions_usage.rb'
+#     - 'app/workers/organizations/calculate_sessions_usage_worker.rb'
+#     - 'app/services/organizations/cycle_availability.rb'
+#     - 'app/models/organization_allocation/parent_organization_allocation_cycle.rb'
+#     - 'app/models/todo.rb'
+#     - 'app/graphql/types/client_requested_placement_type.rb'
+#     - 'app/graphql/types/desired_placement_campaign_type.rb'
+#     - 'app/models/desired_placement/duplicate.rb'
+#     - 'app/services/client_requested_placement/duplicate_service.rb'
+# Style/Documentation:
+#   Enabled: false
+# Style/MutableConstant:
+#   Exclude:
+#     - 'app/models/contract.rb'
+#     - 'app/models/todo.rb'
+# Layout/EmptyLineAfterGuardClause:
+#   Exclude:
+#     - 'app/models/tutor.rb'
+#     - 'lib/hirevue.rb'
+#     - 'app/models/todo.rb'
+# Layout/BlockEndNewline:
+#   Exclude:
+#     - 'app/models/authorization_set.rb'
+#     - 'app/models/todo.rb'
+# Layout/MultilineBlockLayout:
+#   Exclude:
+#     - 'app/models/authorization_set.rb'
+# Naming/MemoizedInstanceVariableName:
+#   Exclude:
+#     - 'app/uploaders/tutor_image_uploader.rb'
+#     - 'app/models/desired_placement/update.rb'
+#     - 'app/models/todo.rb'
+# Naming/PredicateName:
+#   Exclude:
+#     - 'app/graphql/types/assignment_type.rb'
